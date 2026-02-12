@@ -1,60 +1,171 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <title>Shreyas</title>
-</head>
-<body>
+  </head>
 
-    <h1>My Family</h1>
-    <p>
-        I'm <strong>Shreyas</strong>, a senior at <em>Deer Creek High School</em>.
-        My family consists of my parents and my younger brother.
-    </p>
+  <body class="bg-light">
 
-    <h1>Friends</h1>
-    <p>
-        I have my friends such as Ethan, Devansh, Nathan, Zack and many more.
-    </p>
+    <div class="container bg-white border p-4 my-4">
 
-    <p>Friends categorized by the year I first met them</p>
+      <h1 class="text-primary">My Family</h1>
+      <p class="lead">
+        I'm <strong>Shreyas</strong>, a senior at
+        <em><mark>Deer Creek High School</mark></em>. My family consists of my parents and my
+        younger brother.
+      </p>
+      <p class="text-muted small">This is muted small text</p>
+      <p class="fw-bold">Bold typography example</p>
 
-    <table>
+      <p class="text-success">Success text color</p>
+      <p class="text-danger">Danger text color</p>
+
+      <div class="alert alert-warning alert-dismissible fade show">
+        This is an animated Bootstrap alert
+        <button class="btn-close" data-bs-dismiss="alert"></button>
+      </div>
+
+      <h1 class="text-secondary">Friends</h1>
+
+      <div class="row text-center mb-3">
+        <div class="col-lg-3 col-md-6">
+          <button class="btn btn-primary">Button</button>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <span class="badge bg-success">Badge</span>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <button class="btn btn-outline-danger">Outline</button>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="spinner-border text-primary"></div>
+        </div>
+      </div>
+
+      <div class="row text-center mb-4">
+        <div class="col-lg-3 col-md-6">
+          <button class="btn btn-secondary" disabled>Disabled</button>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <span class="badge bg-warning text-dark">New</span>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <button class="btn btn-success active">Active</button>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="spinner-grow text-success"></div>
+        </div>
+      </div>
+
+      <p class="display-6">
+        Friends categorized by the year I first met them
+      </p>
+
+      <table class="table table-striped">
         <thead>
-            <tr>
-                <th>Sophmore</th>
-                <th>Junior</th>
-                <th>Senior</th>
-            </tr>
+          <tr>
+            <th class="bg-dark text-white">Sophomore</th>
+            <th class="bg-primary text-white">Junior</th>
+            <th class="bg-dark text-white">Senior</th>
+          </tr>
         </thead>
-
         <tbody>
-            <tr>
-                <td>Ethan Lam</td>
-                <td>Devansh</td>
-                <td>John</td>
-            </tr>
-            <tr>
-                <td>Mathew</td>
-                <td>Nathan</td>
-                <td>David</td>
-            </tr>
-            <tr>
-                <td>Dorian</td>
-                <td>Zack</td>
-                <td>Lucky</td>
-            </tr>
+          <tr>
+            <td>Ethan Lam</td>
+            <td>Devansh</td>
+            <td>John</td>
+          </tr>
+          <tr>
+            <td>Mathew</td>
+            <td>Nathan</td>
+            <td>David</td>
+          </tr>
+          <tr>
+            <td>Dorian</td>
+            <td>Zack</td>
+            <td>Lucky</td>
+          </tr>
         </tbody>
-    </table>
+      </table>
 
-    <hr>
-    <a href="page1.html">CLICK ME!</a>
+      <table class="table table-bordered table-hover">
+        <tr>
+          <td>Example</td>
+          <td>Table</td>
+        </tr>
+      </table>
 
-    <p>I don't have a pet but would like to have a dog</p>
-    <img src="/img/dog.jpg" alt="Image of a dog">
+      <hr />
 
-</body>
+      <div class="btn-group mb-3">
+        <button class="btn btn-primary">Left</button>
+        <button class="btn btn-primary">Middle</button>
+        <button class="btn btn-primary">Right</button>
+      </div>
+
+      <div class="btn-group mb-3">
+        <button class="btn btn-outline-dark">A</button>
+        <button class="btn btn-outline-dark">B</button>
+      </div>
+
+      <a href="page1.html" class="btn btn-info">CLICK ME!</a>
+
+      <p class="bg-danger text-white p-2 mt-3">
+        I don't have a pet but would like to have a dog
+      </p>
+
+      <img
+        src="dog.jpg"
+        alt="Image of a dog"
+        class="img-thumbnail mb-2"
+        width="150"
+      />
+      <img
+        src="dog.jpg"
+        alt="Image of a dog"
+        class="rounded-circle mb-2"
+        width="150"
+      />
+      <img
+        src="dog.jpg"
+        alt="Image of a dog"
+        class="rounded mb-2"
+        width="150"
+      />
+
+      <div class="progress mb-2">
+        <div class="progress-bar" style="width: 50%">50%</div>
+      </div>
+
+      <div class="progress mb-3">
+        <div
+          class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+          style="width: 70%"
+        >
+          70%
+        </div>
+      </div>
+
+      <div class="spinner-border text-primary"></div>
+      <div class="spinner-grow text-danger"></div>
+
+      <button class="btn btn-primary ms-3" disabled>
+        <span class="spinner-border spinner-border-sm"></span>
+        Loading
+      </button>
+
+    </div>
+  </body>
 </html>
